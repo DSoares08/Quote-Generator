@@ -1,6 +1,6 @@
 import './App.css';
 import Card from './components/Card';
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 function App() {
   const [quote, setQuote] = useState({
@@ -25,9 +25,11 @@ function App() {
   }
 
   return (
-    <div className="App">
-      {quote && <Card quote={quote} />}
-      <button onClick={getQuote}>Get Quote</button>
+    <div className="App h-screen flex justify-center items-center">
+      <div>
+        {quote && <Card quote={quote} />}
+        <button onClick={getQuote} className="bg-green-400 px-5 py-4 mt-5 text-white">Get Quote</button>
+      </div>
     </div>
   );
 }
