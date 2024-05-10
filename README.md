@@ -1,6 +1,6 @@
 # Quote Generator
 
-[inspire](https://github.com/facebook/create-react-app) quote generator is a minimal web application to read quotes and share them online. It fetches the data from the Quotes API from API Ninjas.
+[inspire](https://main--tiny-centaur-2ce6e8.netlify.app/) quote generator is a minimal web application to read quotes and share them online. It fetches the data from the Quotes API from API Ninjas.
 
 ## Problem
 
