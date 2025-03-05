@@ -11,17 +11,17 @@ function App() {
 
   function getQuote() {
     let options = {
-        method: 'GET',
-        headers: { 'x-api-key': 'R71inVFrhnAWDZufSFucrw==Dx3WRmhehN9OlIgc' }
-      }
-  
-      let url = 'https://api.api-ninjas.com/v1/quotes?category=inspirational'
-  
-  
-      fetch(url, options)
-        .then((res) => res.json()) // parse response as JSON
-        .then((data) => setQuote(data[0]))
-        .catch((err) => console.log(err.message));
+      method: 'GET',
+      headers: { 'X-Api-Key': 'R71inVFrhnAWDZufSFucrw==Dx3WRmhehN9OlIgc' }
+    }
+
+    let url = 'https://api.api-ninjas.com/v1/quotes'
+
+
+    fetch(url, options)
+      .then((res) => res.json()) // parse response as JSON
+      .then((data) => setQuote(data[0]))
+      .catch((err) => console.log(err.message));
   }
 
   return (
